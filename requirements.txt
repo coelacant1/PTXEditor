@@ -1,0 +1,6 @@
+PyQt6
+PyQt6-QScintilla
+Pillow
+PyWavefront
+PyOpenGL
+numpy

@@ -39,3 +39,33 @@
 
 # debug information files
 *.dwo
+
+uc3denv/
+uc3denv/*
+
+# OS junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Environment and secrets
+*.env
+*.env.*.local
+.envrc
+*.secrets*
+
+# --- Docs and site generators ---
+docs/_build/
+site/
+
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+*/__pycache__/
+
+# VSCode 
+.vscode/
