@@ -2,7 +2,7 @@
 
 UNFINISHED
 
-Thank you for considering a contribution to **uCore3DEditor**.
+Thank you for considering a contribution to **PTXEditor**.
 This document explains the rules every pull-request must follow.
 
 ---
@@ -18,7 +18,7 @@ A
 1. **Fork & Clone**
 
 ```bash
-git clone https://github.com/<your-account>/ucore3d.git
+git clone https://github.com/<your-account>/ptxeditor.git
 ```
 
 2. **Create a Branch**

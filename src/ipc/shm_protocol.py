@@ -10,8 +10,8 @@ FB_HDR = struct.Struct("<I H H I I I I I")  # 28 bytes
 SEQ64  = struct.Struct("<Q")
 MAGIC  = 0x55434642  # 'UCFB'
 
-FB_SHM_NAME   = os.getenv("UC3D_FB_NAME", "uc3d_fb")
-CTRL_SHM_NAME = os.getenv("UC3D_CTRL_NAME", "uc3d_ctrl")
+FB_SHM_NAME   = os.getenv("PTX_FB_NAME", "ptx_fb")
+CTRL_SHM_NAME = os.getenv("PTX_CTRL_NAME", "ptx_ctrl")
 
 FB_HEADER_STRUCT = struct.Struct("<I H H I I I I I")  # magic,version,format,w,h,stride,bufcnt,active
 SEQ_STRUCT = struct.Struct("<Q")  # uint64 sequence
@@ -21,7 +21,7 @@ REG_CAM = struct.Struct("<32s I I I I")  # name[32], index, pixel_count, width, 
 REG_MAGIC = 0x55435247
 
 class RegistryReader:
-    def __init__(self, name="/uc3d_reg"):
+    def __init__(self, name="/ptx_reg"):
         self.name = name
         self.fd = None
         self.mm = None
@@ -51,7 +51,7 @@ class RegistryReader:
         self.mm = None; self.fd = None
 
 class FrameShmReader:
-    def __init__(self, name="/uc3d_fb"):
+    def __init__(self, name="/ptx_fb"):
         self.name = name
         self.fd = None
         self.mm = None
@@ -175,8 +175,8 @@ class CtrlShmWriter:
             self.shm = None
 
 class GeoShmReader:
-    def __init__(self, name="/uc3d_geom"):
-        self.name = name            # POSIX shm name (e.g. "/uc3d_geom")
+    def __init__(self, name="/ptx_geom"):
+        self.name = name            # POSIX shm name (e.g. "/ptx_geom")
         self.fd = None
         self.mm = None
         self.count = 0

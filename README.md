@@ -1,12 +1,12 @@
-# uCore3DEditor
-Frontend editor for the uCore3D backend
+# PTXEditor
+Frontend editor for the PTX Editor backend
 
 Heavily work-in-progress!
 
-python3 -m venv uc3denv
-source uc3denv/bin/activate
+python3 -m venv ptxenv
+source ptxenv/bin/activate
 pip install -r requirements.txt
 
 
-cd to uCore3DEditor folder
-git clone https://github.com/coelacant1/ucore3d.git
+cd to PTXEditor folder
+git clone https://github.com/coelacant1/ptxeditor.git

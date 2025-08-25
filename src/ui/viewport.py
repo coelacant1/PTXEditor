@@ -94,7 +94,7 @@ class Viewport(QWidget):
         # Discover cameras via registry
         if not getattr(self, "_reg_ok", False):
             try:
-                reg = RegistryReader("/uc3d_reg")
+                reg = RegistryReader("/ptx_reg")
                 reg.connect()
                 cams = reg.list_cameras()
                 reg.close()
@@ -159,8 +159,8 @@ class Viewport(QWidget):
         QTimer.singleShot(0, _delayed_close)
 
         # Open the new camera pair
-        fb_name   = f"/uc3d_fb{idx}"
-        geom_name = f"/uc3d_geom{idx}"
+        fb_name   = f"/ptx_fb{idx}"
+        geom_name = f"/ptx_geom{idx}"
 
         self._fb = FrameShmReader(fb_name);   self._fb.connect()
         self._geom = GeoShmReader(geom_name); self._geom.connect()

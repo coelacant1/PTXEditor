@@ -40,8 +40,8 @@
 # debug information files
 *.dwo
 
-uc3denv/
-uc3denv/*
+ptxenv/
+ptxenv/*
 
 # OS junk
 .DS_Store

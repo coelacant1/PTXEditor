@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "uCore3DEditor",
+			"name": "PTXEditor",
 			"path": "."
 		},
 		{
-			"name": "uCore3D",
-			"path": "../uCore3D"
+			"name": "PTXEngine",
+			"path": "../PTXEngine"
 		}
 	],
 	"settings": {

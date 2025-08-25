@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("uCore3D Project Editor")
+        self.setWindowTitle("PTX Project Editor")
         self.setGeometry(100, 100, 1600, 900)
         self.current_project_path = None
         self.recompile_needed = False
